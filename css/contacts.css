@@ -18,7 +18,7 @@
 @media (max-width: 767px) {
   :root {
     --font-size-xxl: 5.5rem;
-    --font-size-xl: 4rem;
+    --font-size-xl: 3.5rem;
     --font-size-l: 3rem;
     --font-size-m: 2rem;
   }
@@ -169,8 +169,12 @@ nav div a:hover {
 }
 
 @media (max-width: 767px) {
+  .questions {
+    height: auto;
+  }
   .questions form {
-    width: 80%;
+    width: 100%;
+    border-radius: 0;
   }
 }
 @media (767px <= width <= 1023px) {

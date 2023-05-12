@@ -18,7 +18,7 @@
 @media (max-width: 767px) {
   :root {
     --font-size-xxl: 5.5rem;
-    --font-size-xl: 4rem;
+    --font-size-xl: 3.5rem;
     --font-size-l: 3rem;
     --font-size-m: 2rem;
   }
@@ -92,7 +92,7 @@ nav label {
     padding: 3rem 2.5rem;
   }
   nav h2 {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
   }
   nav div {
     position: fixed;
