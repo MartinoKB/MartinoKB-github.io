@@ -1,0 +1,85 @@
+nav {
+  width: 100%;
+  height: 8vh;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--color-2);
+  background: var(--color-1);
+  h2 {
+    font-size: var(--font-size-xl);
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  div {
+    a {
+      text-transform: capitalize;
+      font-size: var(--font-size-m);
+      font-weight: bold;
+      color: var(--color-2);
+      padding: 1rem 1.3rem;
+      border-radius: 5rem;
+      transition: .5s;
+      cursor: pointer;
+    }
+
+    a:hover {
+      background: var(--color-4);
+      padding: 1rem 1.3rem;
+      border-radius: 5rem;
+      cursor: pointer;
+    }
+  }
+
+  #bars {
+    display: none;
+  }
+
+  label{
+    display: none;
+    cursor: pointer;
+    font-size: var(--font-size-l);
+  }
+}
+
+@media (max-width: 1023px) {
+  nav {
+    justify-content: space-between;
+    padding: 3rem 2.5rem;
+  h2{
+    font-size: var(--font-size-xl);
+  }
+    div{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 8rem;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      background: var(--color-5);
+      a{
+        display: block;
+        padding: 2rem 0;
+        margin: 4rem 0;
+        font-size: var(--font-size-l);
+      }
+      a:hover{
+        color: var(--color-4);
+        background: none;
+      }
+    }
+    label{
+      display: block;
+    }
+    #bars:checked ~ div{
+      left: 0;
+    }
+    .chiusura{
+      color: var(--color-2);
+    }
+  }
+}

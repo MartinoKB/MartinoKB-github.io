@@ -1,0 +1,92 @@
+.questions{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  form{
+    width: 70%;
+    background:var(--color-6);
+    padding: 3rem;
+    font-size: var(--font-size-l);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+    p{
+      margin-bottom: 1rem;
+      font-family: var(--font-family-1);
+      letter-spacing: 0.1rem;
+    }
+    div{
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      i{
+        font-size: var(--font-size-m);
+        margin-right: 1rem;
+      }
+      .data{
+        font-size: var(--font-size-m);
+        width: 90%;
+        margin-bottom: 1rem;
+        border: none;
+        box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+        outline: none;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        padding-top: 0.7rem;
+      }
+      textarea{
+        width: 90%;
+        margin-bottom: 1rem;
+        border: none;
+        box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+        outline: none;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        padding-top: 0.7rem;
+        font-size: var(--font-size-m);
+        resize: none;
+      }
+      .send-btn{
+        font-size: var(--font-size-m);
+        font-weight: bold;
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+        border-radius: 3rem;
+        background-color: var(--color-4);
+        color: var(--color-2);
+        cursor: pointer;
+        transform: .5s;
+      }
+      .send-btn:hover{
+        background-color: var(--color-5);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .questions{
+    height: auto;
+    form{
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+@media (767px <= width <= 1023px){
+  .questions{
+    form{
+      width: 80%;
+    }
+  }
+}

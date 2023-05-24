@@ -1,0 +1,48 @@
+:root {
+  font-size: 62.5%;
+
+  --color-1:#FFB444;//nav background
+  --color-2:#ffffff;//nav text
+  --color-3:#535252;//body text
+  --color-4:#e88a2c;//nav hover
+  --color-5:#d85e00;//span
+  --color-6:#ffc387;//box background
+
+  --font-size-xxxl: 10rem;//icone skills
+  --font-size-xxl:6rem;
+  --font-size-xl: 4.5rem;
+  --font-size-l: 3.5rem;
+  --font-size-m: 2.5rem;
+
+  --font-family-1:'Permanent Marker', cursive;
+  --font-family-2:'Nunito', sans-serif;
+}
+@media (max-width: 767px) {
+  :root {
+    --font-size-xxl: 5.5rem;
+    --font-size-xl: 3.5rem;
+    --font-size-l: 3rem;
+    --font-size-m: 2rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--font-family-2)
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-3);
+  h1,h2,h5{
+    font-family: var(--font-family-1)
+  }
+}
+span{
+  color: var(--color-5);
+  font-family: var(--font-family-1)
+}
